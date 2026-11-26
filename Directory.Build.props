@@ -1,0 +1,10 @@
+<Project>
+  <!-- All dotnet build output goes to /artifacts so no bin/ or obj/ folders land inside
+       shared/MovieLink.Core, which Unity also imports as a local package. -->
+  <PropertyGroup>
+    <UseArtifactsOutput>true</UseArtifactsOutput>
+    <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,8 @@
+{
+  "name": "MovieLink.Editor",
+  "rootNamespace": "MovieLink.Editor",
+  "references": [ "MovieLink.Game" ],
+  "includePlatforms": [ "Editor" ],
+  "excludePlatforms": [],
+  "autoReferenced": false
+}

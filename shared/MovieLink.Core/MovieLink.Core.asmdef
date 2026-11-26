@@ -1,0 +1,9 @@
+{
+  "name": "MovieLink.Core",
+  "rootNamespace": "MovieLink.Core",
+  "references": [],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "noEngineReferences": true
+}

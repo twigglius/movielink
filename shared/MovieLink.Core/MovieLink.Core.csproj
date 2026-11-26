@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Shared rules library. Compiled by the server (dotnet) and by Unity (as a local UPM package,
+       see package.json and MovieLink.Core.asmdef). Keep it free of Unity and ASP.NET APIs,
+       and stick to C# 9 features Unity 2022.3 supports (no records, no init-only setters). -->
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <RootNamespace>MovieLink.Core</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="package.json;*.asmdef;*.meta" />
+  </ItemGroup>
+</Project>

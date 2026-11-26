@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="main-menu" class="screen">
+        <ui:VisualElement class="top-bar">
+            <ui:Button name="settings-button" text="Settings" class="pill-button" />
+            <ui:VisualElement class="spacer" />
+            <ui:Button name="account-button" text="P" class="icon-button avatar" tooltip="Account" />
+        </ui:VisualElement>
+        <ui:VisualElement class="hero">
+            <ui:Label name="game-name" text="Movie Link" class="game-name" />
+            <ui:Label text="Connect any two stars in the fewest movies" class="tagline" />
+        </ui:VisualElement>
+        <ui:VisualElement class="bottom">
+            <ui:Button name="new-game-button" text="New Game" class="primary-button" />
+            <ui:Button name="how-to-play-button" text="How to play" class="link-button" />
+            <ui:Button name="credits-button" text="Credits" class="link-button small" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

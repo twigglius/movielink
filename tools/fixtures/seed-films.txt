@@ -1,0 +1,73 @@
+# Dev seed dataset: well-known films and a few lead cast members each, typed by hand.
+# Not a Wikidata export. Used for local play and tests until the real ingest runs.
+# Format: Title | Year | Actor; Actor; ...
+Catch Me If You Can | 2002 | Leonardo DiCaprio; Tom Hanks; Christopher Walken; Amy Adams; Martin Sheen
+Philadelphia | 1993 | Tom Hanks; Denzel Washington; Antonio Banderas
+Titanic | 1997 | Leonardo DiCaprio; Kate Winslet; Billy Zane; Kathy Bates
+The Departed | 2006 | Leonardo DiCaprio; Matt Damon; Jack Nicholson; Mark Wahlberg; Martin Sheen; Vera Farmiga
+Inception | 2010 | Leonardo DiCaprio; Joseph Gordon-Levitt; Elliot Page; Tom Hardy; Marion Cotillard; Michael Caine
+The Revenant | 2015 | Leonardo DiCaprio; Tom Hardy; Domhnall Gleeson; Will Poulter
+Saving Private Ryan | 1998 | Tom Hanks; Matt Damon; Edward Burns; Tom Sizemore; Vin Diesel
+Forrest Gump | 1994 | Tom Hanks; Robin Wright; Gary Sinise; Sally Field
+Good Will Hunting | 1997 | Matt Damon; Robin Williams; Ben Affleck; Minnie Driver
+Ocean's Eleven | 2001 | George Clooney; Brad Pitt; Matt Damon; Julia Roberts; Andy García; Don Cheadle
+Fight Club | 1999 | Brad Pitt; Edward Norton; Helena Bonham Carter
+Se7en | 1995 | Brad Pitt; Morgan Freeman; Gwyneth Paltrow; Kevin Spacey
+The Shawshank Redemption | 1994 | Tim Robbins; Morgan Freeman
+Training Day | 2001 | Denzel Washington; Ethan Hawke
+Glory | 1989 | Matthew Broderick; Denzel Washington; Morgan Freeman; Cary Elwes
+The Dark Knight | 2008 | Christian Bale; Heath Ledger; Aaron Eckhart; Michael Caine; Maggie Gyllenhaal; Gary Oldman; Morgan Freeman
+The Prestige | 2006 | Hugh Jackman; Christian Bale; Michael Caine; Scarlett Johansson
+Lost in Translation | 2003 | Bill Murray; Scarlett Johansson
+Ghostbusters | 1984 | Bill Murray; Dan Aykroyd; Sigourney Weaver; Harold Ramis
+Alien | 1979 | Sigourney Weaver; Tom Skerritt; John Hurt; Ian Holm
+Pretty Woman | 1990 | Richard Gere; Julia Roberts
+Notting Hill | 1999 | Julia Roberts; Hugh Grant
+Erin Brockovich | 2000 | Julia Roberts; Albert Finney; Aaron Eckhart
+Mr. & Mrs. Smith | 2005 | Brad Pitt; Angelina Jolie
+Gravity | 2013 | Sandra Bullock; George Clooney
+Speed | 1994 | Keanu Reeves; Sandra Bullock; Dennis Hopper
+The Matrix | 1999 | Keanu Reeves; Laurence Fishburne; Carrie-Anne Moss; Hugo Weaving
+Pulp Fiction | 1994 | John Travolta; Samuel L. Jackson; Uma Thurman; Bruce Willis
+Die Hard | 1988 | Bruce Willis; Alan Rickman
+Sense and Sensibility | 1995 | Emma Thompson; Kate Winslet; Alan Rickman; Hugh Grant
+Love Actually | 2003 | Hugh Grant; Emma Thompson; Alan Rickman; Colin Firth; Liam Neeson; Keira Knightley; Bill Nighy
+Pirates of the Caribbean: The Curse of the Black Pearl | 2003 | Johnny Depp; Geoffrey Rush; Orlando Bloom; Keira Knightley
+Schindler's List | 1993 | Liam Neeson; Ben Kingsley; Ralph Fiennes
+Gladiator | 2000 | Russell Crowe; Joaquin Phoenix; Connie Nielsen
+A Beautiful Mind | 2001 | Russell Crowe; Jennifer Connelly; Ed Harris
+Apollo 13 | 1995 | Tom Hanks; Kevin Bacon; Bill Paxton; Gary Sinise; Ed Harris
+A Few Good Men | 1992 | Tom Cruise; Jack Nicholson; Demi Moore; Kevin Bacon
+Top Gun | 1986 | Tom Cruise; Kelly McGillis; Val Kilmer
+Rain Man | 1988 | Dustin Hoffman; Tom Cruise
+Jerry Maguire | 1996 | Tom Cruise; Cuba Gooding Jr.; Renée Zellweger
+The Silence of the Lambs | 1991 | Jodie Foster; Anthony Hopkins
+Heat | 1995 | Al Pacino; Robert De Niro; Val Kilmer
+The Godfather Part II | 1974 | Al Pacino; Robert De Niro; Robert Duvall; Diane Keaton
+Annie Hall | 1977 | Woody Allen; Diane Keaton
+Taxi Driver | 1976 | Robert De Niro; Jodie Foster; Harvey Keitel
+Reservoir Dogs | 1992 | Harvey Keitel; Tim Roth; Steve Buscemi; Michael Madsen
+Fargo | 1996 | Frances McDormand; William H. Macy; Steve Buscemi
+Jurassic Park | 1993 | Sam Neill; Laura Dern; Jeff Goldblum
+Independence Day | 1996 | Will Smith; Bill Pullman; Jeff Goldblum
+Men in Black | 1997 | Tommy Lee Jones; Will Smith; Linda Fiorentino
+The Fugitive | 1993 | Harrison Ford; Tommy Lee Jones
+Star Wars | 1977 | Mark Hamill; Harrison Ford; Carrie Fisher; Alec Guinness
+Raiders of the Lost Ark | 1981 | Harrison Ford; Karen Allen
+Mamma Mia! | 2008 | Meryl Streep; Pierce Brosnan; Colin Firth; Amanda Seyfried
+The Devil Wears Prada | 2006 | Meryl Streep; Anne Hathaway; Emily Blunt
+Les Misérables | 2012 | Hugh Jackman; Russell Crowe; Anne Hathaway; Amanda Seyfried
+The Wolf of Wall Street | 2013 | Leonardo DiCaprio; Jonah Hill; Margot Robbie; Matthew McConaughey
+Interstellar | 2014 | Matthew McConaughey; Anne Hathaway; Jessica Chastain; Michael Caine
+Amélie | 2001 | Audrey Tautou; Mathieu Kassovitz
+Vicky Cristina Barcelona | 2008 | Javier Bardem; Penélope Cruz; Scarlett Johansson; Rebecca Hall
+No Country for Old Men | 2007 | Tommy Lee Jones; Javier Bardem; Josh Brolin
+The Avengers | 2012 | Robert Downey Jr.; Chris Evans; Mark Ruffalo; Chris Hemsworth; Scarlett Johansson; Jeremy Renner; Samuel L. Jackson
+Zodiac | 2007 | Jake Gyllenhaal; Mark Ruffalo; Robert Downey Jr.
+Brokeback Mountain | 2005 | Heath Ledger; Jake Gyllenhaal; Anne Hathaway; Michelle Williams
+Shutter Island | 2010 | Leonardo DiCaprio; Mark Ruffalo; Ben Kingsley; Michelle Williams
+Kill Bill: Volume 1 | 2003 | Uma Thurman; Lucy Liu
+Charlie's Angels | 2000 | Cameron Diaz; Drew Barrymore; Lucy Liu; Bill Murray
+There's Something About Mary | 1998 | Cameron Diaz; Matt Dillon; Ben Stiller
+Meet the Parents | 2000 | Ben Stiller; Robert De Niro; Teri Polo
+The Mask | 1994 | Jim Carrey; Cameron Diaz
