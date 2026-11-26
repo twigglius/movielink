@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.11" />
+    <PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" Version="8.10.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/MovieLink.Api/MovieLink.Api.csproj" />
+    <ProjectReference Include="../../../tools/MovieLink.Tools/MovieLink.Tools.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../tools/fixtures/seed-dataset.json" Link="seed-dataset.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

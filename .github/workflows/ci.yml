@@ -1,0 +1,25 @@
+name: ci
+on:
+  push: { branches: [main] }
+  pull_request:
+jobs:
+  dotnet:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: movielink
+          POSTGRES_PASSWORD: movielink
+          POSTGRES_DB: movielink
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U movielink" --health-interval 2s --health-retries 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with: { dotnet-version: "8.0.x" }
+      - run: dotnet test MovieLink.sln
+        env:
+          MOVIELINK_TEST_DB_ADMIN: Host=localhost;Username=movielink;Password=movielink;Database=postgres
+  # Unity WebGL CI build needs a Unity license secret (game-ci/unity-builder). Added in Phase 2.

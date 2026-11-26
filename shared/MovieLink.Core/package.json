@@ -1,0 +1,7 @@
+{
+  "name": "com.movielink.core",
+  "version": "0.1.0",
+  "displayName": "MovieLink Core",
+  "description": "Shared chain rules, scoring and DTOs for the movie-link game. Also compiled by the .NET server.",
+  "unity": "2022.3"
+}

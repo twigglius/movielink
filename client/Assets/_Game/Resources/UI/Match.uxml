@@ -1,0 +1,32 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="match" class="screen">
+        <ui:VisualElement class="match-header">
+            <ui:Label name="timer" text="2:00" class="timer" />
+            <ui:Label name="link-counter" text="0 links" class="link-counter" />
+        </ui:VisualElement>
+        <ui:VisualElement class="ends">
+            <ui:VisualElement class="actor-card start">
+                <ui:Label name="start-initials" text="" class="initials" />
+                <ui:Label name="start-name" text="" class="actor-name" />
+                <ui:Label text="Start" class="card-caption" />
+            </ui:VisualElement>
+            <ui:Label text="→" class="arrow" />
+            <ui:VisualElement class="actor-card target">
+                <ui:Label name="target-initials" text="" class="initials" />
+                <ui:Label name="target-name" text="" class="actor-name" />
+                <ui:Label text="Target" class="card-caption" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:ScrollView name="chain" class="chain" />
+        <ui:Label name="message" text="" class="message" />
+        <ui:VisualElement class="search-area">
+            <ui:TextField name="search" class="search" />
+            <ui:Label name="search-hint" text="Search a movie" class="search-hint" />
+            <ui:ScrollView name="results" class="results" />
+        </ui:VisualElement>
+        <ui:VisualElement class="match-footer">
+            <ui:Button name="back-button" text="Back" class="secondary-button" />
+            <ui:Button name="give-up-button" text="Give up" class="link-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

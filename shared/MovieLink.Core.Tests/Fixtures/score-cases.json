@@ -1,0 +1,16 @@
+{
+  "_comment": "Expected scores for maxLinks=6, timeLimit=120 s. score = 1000*(7-L) + floor(999*(120-t)/120).",
+  "cases": [
+    { "links": 2, "seconds": 40, "score": 5666 },
+    { "links": 3, "seconds": 5, "score": 4957 },
+    { "links": 1, "seconds": 0, "score": 6999 },
+    { "links": 1, "seconds": 119.999, "score": 6000 },
+    { "links": 2, "seconds": 0, "score": 5999 },
+    { "links": 6, "seconds": 60, "score": 1499 },
+    { "links": 2, "seconds": 120, "score": 0 },
+    { "links": 2, "seconds": 500, "score": 0 },
+    { "links": 7, "seconds": 10, "score": 0 },
+    { "links": 0, "seconds": 10, "score": 0 },
+    { "links": 2, "seconds": -3, "score": 5999 }
+  ]
+}

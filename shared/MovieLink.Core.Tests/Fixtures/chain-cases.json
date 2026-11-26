@@ -1,0 +1,35 @@
+{
+  "_comment": "Golden chain cases. Tiny made-up graph: ids, not real credits. A=actor, M=movie.",
+  "credits": [
+    [1, 100], [2, 100],
+    [2, 101], [3, 101],
+    [3, 102], [4, 102],
+    [1, 103], [5, 103],
+    [5, 104], [4, 104],
+    [6, 105], [7, 105]
+  ],
+  "rules": { "maxLinks": 6, "timeLimitSeconds": 120 },
+  "cases": [
+    { "name": "empty chain is valid, not complete", "start": 1, "target": 4, "chain": [], "error": "None", "links": 0, "complete": false },
+    { "name": "start only", "start": 1, "target": 4, "chain": ["A1"], "error": "None", "links": 0, "complete": false },
+    { "name": "wrong start actor", "start": 1, "target": 4, "chain": ["A2"], "error": "WrongStart", "errorIndex": 0, "links": 0, "complete": false },
+    { "name": "chain must start with an actor", "start": 1, "target": 4, "chain": ["M100"], "error": "WrongStart", "errorIndex": 0, "links": 0, "complete": false },
+    { "name": "pick a movie the start actor is in", "start": 1, "target": 4, "chain": ["A1", "M100"], "error": "None", "links": 1, "complete": false },
+    { "name": "movie the actor is not in", "start": 1, "target": 4, "chain": ["A1", "M101"], "error": "NotInMovie", "errorIndex": 1, "links": 0, "complete": false },
+    { "name": "co-star not in movie", "start": 1, "target": 4, "chain": ["A1", "M100", "A3"], "error": "NotInMovie", "errorIndex": 2, "links": 1, "complete": false },
+    { "name": "two actors in a row", "start": 1, "target": 4, "chain": ["A1", "A2"], "error": "WrongKind", "errorIndex": 1, "links": 0, "complete": false },
+    { "name": "two movies in a row", "start": 1, "target": 4, "chain": ["A1", "M100", "M103"], "error": "WrongKind", "errorIndex": 2, "links": 1, "complete": false },
+    { "name": "2-link chain via 103 and 104", "start": 1, "target": 4, "chain": ["A1", "M103", "A5", "M104", "A4"], "error": "None", "links": 2, "complete": true },
+    { "name": "3-link chain", "start": 1, "target": 4, "chain": ["A1", "M100", "A2", "M101", "A3", "M102", "A4"], "error": "None", "links": 3, "complete": true },
+    { "name": "repeat the start actor", "start": 1, "target": 4, "chain": ["A1", "M100", "A1"], "error": "Repeated", "errorIndex": 2, "links": 1, "complete": false },
+    { "name": "repeat a movie", "start": 2, "target": 4, "chain": ["A2", "M100", "A1", "M100"], "error": "Repeated", "errorIndex": 3, "links": 1, "complete": false },
+    { "name": "step after reaching target", "start": 1, "target": 4, "chain": ["A1", "M103", "A5", "M104", "A4", "M102"], "error": "AlreadyComplete", "errorIndex": 5, "links": 2, "complete": false },
+    { "name": "1-link chain is complete", "start": 6, "target": 7, "chain": ["A6", "M105", "A7"], "error": "None", "links": 1, "complete": true },
+    { "name": "ends on a movie: valid prefix, not complete", "start": 1, "target": 4, "chain": ["A1", "M103", "A5", "M104"], "error": "None", "links": 2, "complete": false }
+  ],
+  "limitCases": [
+    { "name": "at max links only the target actor may follow", "maxLinks": 2, "start": 1, "target": 4, "chain": ["A1", "M100", "A2", "M101", "A3"], "error": "TooManyLinks", "errorIndex": 4, "links": 2, "complete": false },
+    { "name": "max links 1: a non-target co-star is a dead end", "maxLinks": 1, "start": 1, "target": 4, "chain": ["A1", "M103", "A5", "M104"], "error": "TooManyLinks", "errorIndex": 2, "links": 1, "complete": false },
+    { "name": "reaching target exactly at max links is fine", "maxLinks": 2, "start": 1, "target": 4, "chain": ["A1", "M103", "A5", "M104", "A4"], "error": "None", "links": 2, "complete": true }
+  ]
+}
